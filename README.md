@@ -24,10 +24,10 @@ Integrating multi-source biological data for pathogenic gene prediction is of si
 
 
 ## III. Executing program
-1.Make sure you are in the directory \~/PathoGenCVFM.\
+1.Make sure you are in the directory "\~/PathoGenCVFM".\
 2.Taking the "test_test_0.2_disMidSplit" dataset as an example, then we will show you the commands for training and testing PathoGenCVFM. You can adjust the required parameters directly.\
-3.Due to upload restrictions, we only provided the original predicted results of all methods under balanced conditions in the "~/Evaluation/Results_method" directory, and the post-evaluation results under balanced and unbalanced conditions in the "~/Evaluation/Results_statistic" directory.\
-4.In "~/EnrichAnalysis", we have provided the complete original files and results of the enrichment analysis.
+3.Due to upload restrictions, we only provided the original predicted results of all methods under balanced conditions in the "\~/Evaluation/Results_method" directory, and the post-evaluation results under balanced and unbalanced conditions in the "\~/Evaluation/Results_statistic" directory.\
+4.In "\~/EnrichAnalysis", we have provided the complete original files and results of the enrichment analysis.
 
 
 ### 1.Training and testing PathoGenCVFM
@@ -54,9 +54,9 @@ The params in the above command are explained as follows, please refer to "Param
 ```
 By using the above commands, you will be able to conduct training and testing on the test_test_0.2_disMidSplit dataset. The related files will be saved at :
 ```
-Prediction Results:  ~/Result/testDemo
-Model Files:         ~/Saved_model/testDemo
-Feature Files:       ~/Saved_Features/FusionFeats/testDemo
+Prediction Results:  \~/Result/testDemo
+Model Files:         \~/Saved_model/testDemo
+Feature Files:       \~/Saved_Features/FusionFeats/testDemo
 ```
 For performance evaluation, you can move to Section "IV. Evaluation".
 
@@ -65,9 +65,9 @@ For performance evaluation, you can move to Section "IV. Evaluation".
 Make sure you have already trained PathoGenCVFM.\
 If yes, there will have some model files in the directory :
 ```
-~/Saved_model/testDemo/DiffusionModel
-~/Saved_model/testDemo/HyperGraphLearner
-~/Saved_model/testDemo/Multi_ViewDenoise
+\~/Saved_model/testDemo/DiffusionModel
+\~/Saved_model/testDemo/HyperGraphLearner
+\~/Saved_model/testDemo/Multi_ViewDenoise
 ```
 Then you can use the following command to finetune PathoGenCVFM :
 ```
@@ -84,8 +84,8 @@ python Main.py --dataset hprd --SplitMode disMid --mode finetuning --gpu 0 --Exp
 Make sure you have already trained PathoGenCVFM.\
 If yes, there will have some fusion features in the directory :
 ```
-~/Saved_Features/FusionFeats/testDemo
-~/Saved_Features/MultiViewFeats/testDemo
+\~/Saved_Features/FusionFeats/testDemo
+\~/Saved_Features/MultiViewFeats/testDemo
 ```
 Then you can use the following command to conduct inference :
 ```
@@ -93,7 +93,7 @@ python Main.py --dataset test --SplitMode disMid --mode infer --Exp_name testDem
 ```
 Then the prediction results of test_test_0.2_disMidSplit will output in the directory :
 ```
-~/Inference/testDemo
+\~/Inference/testDemo
 ```
 Here, we also provided the features of HPRD_dgn_0.2_disMidSplit. You can verify them using the following commands :
 ```
@@ -105,8 +105,8 @@ python Main.py --dataset hprd --SplitMode disMid --mode infer --Exp_name HPRD_dg
 Make sure you have already trained PathoGenCVFM.\
 If yes, there will have some fusion features in the directory :
 ```
-~/Saved_Features/FusionFeats/testDemo
-~/Saved_Features/MultiViewFeats/testDemo
+\~/Saved_Features/FusionFeats/testDemo
+\~/Saved_Features/MultiViewFeats/testDemo
 ```
 Then you can use the following command to conduct case study :
 ```
@@ -114,7 +114,7 @@ python Main.py --dataset test --SplitMode disMid --mode casestudy --tgtDis ['C2'
 ```
 Then the prediction results of test_test_0.2_disMidSplit will output in the directory :
 ```
-~/CaseStudy/testDemo
+\~/CaseStudy/testDemo
 ```
 Here, we also provided the features of HPRD_dgn_0.2_disMidSplit. You can verify them using the following commands :
 ```
@@ -129,17 +129,17 @@ python Main.py --dataset test --SplitMode dis --mode foldcv --n_fold 5 --gpu 0 -
 ```
 By executing the above commands, the program will automatically divide the dataset into 5 clusters using spectral clustering and save them in the following paths :
 ```
-~/Datasets/test_test_0.2_disSplit_Fold_1
-~/Datasets/test_test_0.2_disSplit_Fold_2
+\~/Datasets/test_test_0.2_disSplit_Fold_1
+\~/Datasets/test_test_0.2_disSplit_Fold_2
 .......
-~/Datasets/test_test_0.2_disSplit_Fold_5
+\~/Datasets/test_test_0.2_disSplit_Fold_5
 ```
 Then the program will automatically read these datasets and conduct training and testing. The results will saved at :
 ```
-~/Result/test_test_0.2_disSplit_Fold_1_testDemo_CV
-~/Result/test_test_0.2_disSplit_Fold_2_testDemo_CV
+\~/Result/test_test_0.2_disSplit_Fold_1_testDemo_CV
+\~/Result/test_test_0.2_disSplit_Fold_2_testDemo_CV
 .......
-~/Result/test_test_0.2_disSplit_Fold_5_testDemo_CV
+\~/Result/test_test_0.2_disSplit_Fold_5_testDemo_CV
 ```
 
 ### 4.1 Inference and CaseStudy of n-Fold Cross Validation
@@ -158,8 +158,8 @@ python Main.py --dataset test --SplitMode dis --mode casestudy --exe_fold 5 --gp
 ```
 By executing the above commands, the program will automatically conducting inference/casestudy and save them in the following paths :
 ```
-~/Inference/testDemo_CV
-~/CaseStudy/testDemo_CV
+\~/Inference/testDemo_CV
+\~/CaseStudy/testDemo_CV
 ```
 
 ### 4.2 finetuning of n-Fold Cross Validation
@@ -175,10 +175,10 @@ By executing the above commands, the program will automatically conducting finet
 
 ## IV. Evaluation
 ### 1.Evaluation of single method
-To evaluate the model performance, you should move the result file from "~/Result/testDemo" to "~/Evaluation/Results_method/PathoGenCVFM".\
+To evaluate the model performance, you should move the result file from "\~/Result/testDemo" to "\~/Evaluation/Results_method/PathoGenCVFM".\
 Then you should set configurations in the following file:
 ```
-~/Evaluation/config_Topk.xlsx
+\~/Evaluation/config_Topk.xlsx
 ```
 The demo of these two files are as follows, you can adjust the parameters according to your needs.
 
@@ -204,7 +204,7 @@ python Evaluation/1.Result_Cal_TopK.py
 ```
 By executing above command, the results will be saved in the following path:
 ```
-~/Evaluation/Results_statistic
+\~/Evaluation/Results_statistic
 ```
 
 ### 2.Performance comparison among different methods
@@ -215,17 +215,17 @@ python Evaluation/2.Statistic_Result.py
 ```
 Make sure the configiration has been set in the following file:
 ```
-~/Evaluation/config_statistic.xlsx
+\~/Evaluation/config_statistic.xlsx
 ```
 By executing above command, the results will be saved in the following path:
 ```
-~/Evaluation/Summarize
+\~/Evaluation/Summarize
 ```
 
 ### 3.n-Fold CV performance comparison among different methods
 If a performance comparison is required, then you should set configurations in the following file:
 ```
-~/Evaluation/config_statistic_FoldCV.xlsx
+\~/Evaluation/config_statistic_FoldCV.xlsx
 ```
 
 <div style="display: flex; align-items: center;">
@@ -238,7 +238,7 @@ python Evaluation/3.Statistic_FoldCVResult.py
 ```
 By executing above command, the results will be saved in the following path:
 ```
-~/Evaluation/Summarize
+\~/Evaluation/Summarize
 ```
 
 
@@ -247,8 +247,8 @@ Make sure you have already conducted CaseStudy by the following command:
 ```
 python Main.py --dataset hprd --SplitMode disMid --mode casestudy --tgtDis ['C0002395'] --Exp_name HPRD_dgn_0.2_disMidSplit
 ```
-Then you should copy "HPRD_dgn_0.2_disMidSplit" from "~/Datasets" to "~/EnrichAnalysis/Datasets".\
-Final, copy "HPRD_dgn_0.2_disMidSplit" from "~/CaseStudy" to "~/EnrichAnalysis/PredAssociations", and rename them as "HPRD_dgn_0.2_disMidSplit_PathoGenCVFM".\
+Then you should copy "HPRD_dgn_0.2_disMidSplit" from "\~/Datasets" to "\~/EnrichAnalysis/Datasets".\
+Final, copy "HPRD_dgn_0.2_disMidSplit" from "\~/CaseStudy" to "\~/EnrichAnalysis/PredAssociations", and rename them as "HPRD_dgn_0.2_disMidSplit_PathoGenCVFM".\
 
 All the documents have been prepared for you. You can view them in the corresponding folder.
 Then you can conduct GO Enrichment analysis and KEGG Enrichment analysis by executing the following command:
