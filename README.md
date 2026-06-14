@@ -26,7 +26,7 @@ Integrating multi-source biological data for pathogenic gene prediction is of si
 ## III. Executing program
 1.Make sure you are in the directory "\~/PathoGenCVFM".\
 2.Taking the "test_test_0.2_disMidSplit" dataset as an example, then we will show you the commands for training and testing PathoGenCVFM. You can adjust the required parameters directly.\
-3.Due to upload restrictions, we only provided the original predicted results of all methods under balanced conditions in the "\~/Evaluation/Results_method" directory, and the post-evaluation results under balanced and imbalanced datasets in the "\~/Evaluation/Results_statistic" directory.\
+3.Due to upload restrictions, we only provided the original predicted results of all methods under balanced datasets in the "\~/Evaluation/Results_method" directory, and the post-evaluation results under balanced and imbalanced datasets in the "\~/Evaluation/Results_statistic" directory.\
 4.In "\~/EnrichAnalysis", we have provided the complete original files and results of the enrichment analysis.
 
 
