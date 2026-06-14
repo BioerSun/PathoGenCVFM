@@ -1,0 +1,9 @@
+GeneID,diseaseID,postive_negative,train_test
+h,C3,0,train
+h,C2,0,train
+h,C1,0,train
+h,C4,0,train
+h,C5,0,train
+h,C6,0,train
+e,C2,0,test
+d,C6,0,test

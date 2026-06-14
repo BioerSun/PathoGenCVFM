@@ -1,0 +1,31 @@
+ID,Term
+GO:0007268,Chemical Synaptic Transmission
+GO:0098916,Anterograde Trans-Synaptic Signaling
+GO:0007187,"GPCR Sgnlng Pway, Coupled to Cyclic Nucleotide Second Messenger"
+GO:0034776,Response to Histamine
+GO:0050804,Modulation of Chemical Synaptic Transmission
+GO:0030003,Intracellular Monoatomic Cation Homeostasis
+GO:1903531,Negative Regulation of Secretion by Cell
+GO:0098655,Monoatomic Cation Transmembrane Transport
+GO:0098662,Inorganic Cation Transmembrane Transport
+GO:0007612,Learning
+GO:0043005,Neuron Projection
+GO:0030425,Dendrite
+GO:0030424,Axon
+GO:0014069,Postsynaptic Density
+GO:0099634,Postsynaptic Specialization Membrane
+GO:0032279,Asymmetric Synapse
+GO:0097060,Synaptic Membrane
+GO:0032590,Dendrite Membrane
+GO:0008076,Voltage-Gated Potassium Channel Complex
+GO:0030665,Clathrin-Coated Vesicle Membrane
+GO:0098960,Postsynaptic Neurotransmitter Receptor Activity
+GO:0008227,G Protein-Coupled Amine Receptor Activity
+GO:0004993,G Protein-Coupled Serotonin Receptor Activity
+GO:0099589,Serotonin Receptor Activity
+GO:0022824,Transmitter-Gated Monoatomic Ion Channel Activity
+GO:0016917,GABA Receptor Activity
+GO:0022843,Voltage-Gated Monoatomic Cation Channel Activity
+GO:0015276,Ligand-Gated Monoatomic Ion Channel Activity
+GO:0005179,Hormone Activity
+GO:1904315,Transmitter-Gated Monoatomic Ion Channel Activity Involved in Regulation of Postsynaptic Membrane Potential
